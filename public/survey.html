@@ -154,7 +154,7 @@
     <br>
 
     <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit" data-toggle="modal" data-target="#submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
      Submit</button>
 
     <hr>
@@ -173,7 +173,7 @@
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <button type="button" class="close" data-dismiss="modal">x</button>
           <h2 class="modal-title"><strong>Best Match</strong></h2>
         </div>
         <div class="modal-body">
@@ -189,7 +189,7 @@
   </div>
 
   <script type="text/javascript">
-    // Chosen CSS
+    // Chosen options
     var config = {
       ".chosen-select": {},
       ".chosen-select-deselect": {
@@ -234,7 +234,7 @@
 
       // If all required fields are filled
       if (validateForm()) {
-        // Create an object for the user"s data
+        // Create an object for the user's data
         var surveyData = {
           name: $("#name").val(),
           photo: $("#photo").val(),

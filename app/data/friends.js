@@ -18,4 +18,4 @@ var surveyArray = [
         ]
     }
 ];
-module.exports = surveyArray
+module.exports = surveyArray;
